@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SwitchProXInput</AssemblyName>
+    <RootNamespace>SwitchProXInput.App</RootNamespace>
+    <Version>1.0.0</Version>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <UseAppHost>true</UseAppHost>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SwitchProXInput.Core\SwitchProXInput.Core.csproj" />
+    <PackageReference Include="ppy.SDL3-CS" Version="2026.722.0" />
+    <Reference Include="HIDMaestro.Core">
+      <HintPath>..\..\third_party\HIDMaestro.Core.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
